@@ -47,6 +47,7 @@ public final class IOUtils {
     public static void close(Closeable closeable) {
         try {
             closeable.close();
+            System.out.println("dd");
         } catch (IOException e) {
             e.printStackTrace();
         }
